@@ -4,7 +4,7 @@ import { Card } from '../../../components/card';
 import { Tabs } from '../../../components/tabs';
 import Client from '../../../lib/client';
 import { RequestError } from '../../../lib/request-error';
-import { Unit } from './_components/unit';
+import { Units } from './_components/units';
 
 export const dynamic = 'force-dynamic';
 export const metadata = {
@@ -31,7 +31,7 @@ export default async function Page() {
               <>
                 {group.units && !!group.units.length ? (
                   group.units.map((unit) => {
-                    return <Unit key={unit.id} unit={unit} />;
+                    return <Units key={unit.id} unit={unit} />;
                   })
                 ) : (
                   <div className="flex items-center justify-center p-8 text-sm">

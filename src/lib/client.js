@@ -118,7 +118,7 @@ export default class Client {
       ...params,
       ...{
         include:
-          'units,units.users,units.users.position,units.users.rank,units.users.rank.image,units.users.specialty,units.users.status',
+          'units,units.users,units.users.position,units.users.rank,units.users.rank.image,units.users.specialty,units.users.status,units.units,units.units.users',
         limit: 100
       }
     });
