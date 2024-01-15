@@ -18,7 +18,7 @@ export function Unit({ unit }) {
         </TableHeadCell>
       </TableHead>
       <TableBody>
-        {users.length ? (
+        {users && users.length ? (
           users.map((user) => {
             const { name, rank, online, position, specialty, status, id: user_id } = user;
             const { image, abbreviation, name: rank_name } = rank ?? {};
